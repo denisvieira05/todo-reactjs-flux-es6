@@ -11,8 +11,8 @@ class StartStore {
     }
 }
 
-StartStore.instance._register({
+// StartStore.instance._register({
     
-});
+// });
 
 module.exports = StartStore;

@@ -7,17 +7,17 @@ webpackJsonp([0],{
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(10)["default"];
+	var _classCallCheck = __webpack_require__(32)["default"];
 
-	var _createClass = __webpack_require__(11)["default"];
+	var _createClass = __webpack_require__(33)["default"];
 
-	var _interopRequire = __webpack_require__(12)["default"];
+	var _interopRequire = __webpack_require__(34)["default"];
 
 	var PubSub = _interopRequire(__webpack_require__(4));
 
 	var Dispatcher = _interopRequire(__webpack_require__(5));
 
-	__webpack_require__(8);
+	__webpack_require__(30);
 
 	var React = _interopRequire(__webpack_require__(2));
 
@@ -25,7 +25,7 @@ webpackJsonp([0],{
 
 	var Todos = _interopRequire(__webpack_require__(7));
 
-	var Footer = _interopRequire(__webpack_require__(180));
+	var Footer = _interopRequire(__webpack_require__(8));
 
 	var Start = (function () {
 	    function Start() {
@@ -64,17 +64,17 @@ webpackJsonp([0],{
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(10)["default"];
+	var _classCallCheck = __webpack_require__(32)["default"];
 
-	var _inherits = __webpack_require__(35)["default"];
+	var _inherits = __webpack_require__(36)["default"];
 
-	var _get = __webpack_require__(36)["default"];
+	var _get = __webpack_require__(37)["default"];
 
-	var _createClass = __webpack_require__(11)["default"];
+	var _createClass = __webpack_require__(33)["default"];
 
-	var _core = __webpack_require__(37)["default"];
+	var _core = __webpack_require__(38)["default"];
 
-	var EventEmitter = __webpack_require__(41).EventEmitter;
+	var EventEmitter = __webpack_require__(107).EventEmitter;
 
 	var _instance = _core.Symbol(),
 	    _enforcer = _core.Symbol();
@@ -197,7 +197,7 @@ webpackJsonp([0],{
 
 	/*jshint node:true, undef:true, unused:true*/
 
-	var Dispatcher = __webpack_require__(107).Dispatcher,
+	var Dispatcher = __webpack_require__(108).Dispatcher,
 	    dispatcher;
 
 	if (!dispatcher) {
@@ -211,7 +211,7 @@ webpackJsonp([0],{
 /***/ 6:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(38);
+	module.exports = __webpack_require__(39);
 
 /***/ },
 
@@ -225,13 +225,20 @@ webpackJsonp([0],{
 /***/ 8:
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(41);
+
+/***/ },
+
+/***/ 30:
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(9);
+	var content = __webpack_require__(31);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(13)(content, {});
+	var update = __webpack_require__(35)(content, {});
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
@@ -246,15 +253,15 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 9:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(106)();
+	exports = module.exports = __webpack_require__(109)();
 	exports.push([module.id, ".FinanceiroApp {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-flow: column;\n      -ms-flex-flow: column;\n          flex-flow: column;\n  padding: 1rem 0 0;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0; }\n\n.FinanceiroApp__Empty {\n  color: #777;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-flow: column;\n      -ms-flex-flow: column;\n          flex-flow: column;\n  font-size: 1.6rem;\n  line-height: 1.3;\n  margin: auto;\n  text-align: center;\n  width: 25rem; }\n  .FinanceiroApp__Empty i {\n    color: #ccc;\n    font-size: 7rem;\n    margin-bottom: 1rem;\n    text-shadow: #999 1px 1px 0; }\n", ""]);
 
 /***/ },
 
-/***/ 10:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -269,7 +276,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 11:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -296,7 +303,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 12:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -309,7 +316,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 13:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -506,7 +513,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 35:
+/***/ 36:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -531,12 +538,12 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 36:
+/***/ 37:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _core = __webpack_require__(37)["default"];
+	var _core = __webpack_require__(38)["default"];
 
 	exports["default"] = function get(_x, _x2, _x3) {
 	  var _again = true;
@@ -580,7 +587,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 37:
+/***/ 38:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -2927,16 +2934,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 38:
+/***/ 39:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(10)["default"];
+	var _classCallCheck = __webpack_require__(32)["default"];
 
-	var _createClass = __webpack_require__(11)["default"];
+	var _createClass = __webpack_require__(33)["default"];
 
-	var _interopRequire = __webpack_require__(12)["default"];
+	var _interopRequire = __webpack_require__(34)["default"];
 
 	var React = _interopRequire(__webpack_require__(2));
 
@@ -2974,17 +2981,17 @@ webpackJsonp([0],{
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(10)["default"];
+	var _classCallCheck = __webpack_require__(32)["default"];
 
-	var _createClass = __webpack_require__(11)["default"];
+	var _createClass = __webpack_require__(33)["default"];
 
-	var _interopRequire = __webpack_require__(12)["default"];
+	var _interopRequire = __webpack_require__(34)["default"];
 
 	var React = _interopRequire(__webpack_require__(2));
 
-	var Todo = _interopRequire(__webpack_require__(151));
+	var Todo = _interopRequire(__webpack_require__(153));
 
-	var Actions = _interopRequire(__webpack_require__(186));
+	// import Actions from "actions/StartAction";
 
 	var Todos = (function () {
 	    function Todos() {
@@ -3027,6 +3034,53 @@ webpackJsonp([0],{
 /***/ },
 
 /***/ 41:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _classCallCheck = __webpack_require__(32)["default"];
+
+	var _createClass = __webpack_require__(33)["default"];
+
+	var _interopRequire = __webpack_require__(34)["default"];
+
+	var React = _interopRequire(__webpack_require__(2));
+
+	var TodoCount = _interopRequire(__webpack_require__(154));
+
+	var Filters = _interopRequire(__webpack_require__(155));
+
+	var Footer = (function () {
+		function Footer() {
+			_classCallCheck(this, Footer);
+		}
+
+		_createClass(Footer, {
+			render: {
+				value: function render() {
+					return React.createElement(
+						"footer",
+						{ className: "footer" },
+						React.createElement(TodoCount, null),
+						React.createElement(Filters, null),
+						React.createElement(
+							"button",
+							{ className: "clear-completed" },
+							"Clear completed"
+						)
+					);
+				}
+			}
+		});
+
+		return Footer;
+	})();
+
+	module.exports = Footer;
+
+/***/ },
+
+/***/ 107:
 /***/ function(module, exports, __webpack_require__) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -3331,7 +3385,24 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 106:
+/***/ 108:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	module.exports.Dispatcher = __webpack_require__(157);
+
+
+/***/ },
+
+/***/ 109:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function() {
@@ -3353,31 +3424,28 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 107:
+/***/ 153:
 /***/ function(module, exports, __webpack_require__) {
 
-	/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 */
-
-	module.exports.Dispatcher = __webpack_require__(152);
-
+	module.exports = __webpack_require__(175);
 
 /***/ },
 
-/***/ 151:
+/***/ 154:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(170);
+	module.exports = __webpack_require__(176)
 
 /***/ },
 
-/***/ 152:
+/***/ 155:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(177)
+
+/***/ },
+
+/***/ 157:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3399,7 +3467,7 @@ webpackJsonp([0],{
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	var invariant = __webpack_require__(178);
+	var invariant = __webpack_require__(185);
 
 	var _prefix = 'ID_';
 
@@ -3611,24 +3679,24 @@ webpackJsonp([0],{
 	})();
 
 	module.exports = Dispatcher;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(42)))
 
 /***/ },
 
-/***/ 170:
+/***/ 175:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(10)["default"];
+	var _classCallCheck = __webpack_require__(32)["default"];
 
-	var _get = __webpack_require__(36)["default"];
+	var _get = __webpack_require__(37)["default"];
 
-	var _createClass = __webpack_require__(11)["default"];
+	var _createClass = __webpack_require__(33)["default"];
 
-	var _core = __webpack_require__(37)["default"];
+	var _core = __webpack_require__(38)["default"];
 
-	var _interopRequire = __webpack_require__(12)["default"];
+	var _interopRequire = __webpack_require__(34)["default"];
 
 	var React = _interopRequire(__webpack_require__(2));
 
@@ -3674,140 +3742,72 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 178:
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule invariant
-	 */
-
-	"use strict";
-
-	/**
-	 * Use invariant() to assert state which your program assumes to be true.
-	 *
-	 * Provide sprintf-style format (only %s is supported) and arguments
-	 * to provide information about what broke and what you were
-	 * expecting.
-	 *
-	 * The invariant message will be stripped in production, but the invariant
-	 * will remain to ensure logic does not differ in production.
-	 */
-
-	var invariant = function (condition, format, a, b, c, d, e, f) {
-	  if (process.env.NODE_ENV !== 'production') {
-	    if (format === undefined) {
-	      throw new Error('invariant requires an error message argument');
-	    }
-	  }
-
-	  if (!condition) {
-	    var error;
-	    if (format === undefined) {
-	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-	    } else {
-	      var args = [a, b, c, d, e, f];
-	      var argIndex = 0;
-	      error = new Error('Invariant Violation: ' + format.replace(/%s/g, function () {
-	        return args[argIndex++];
-	      }));
-	    }
-
-	    error.framesToPop = 1; // we don't care about invariant's own frame
-	    throw error;
-	  }
-	};
-
-	module.exports = invariant;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)))
-
-/***/ },
-
-/***/ 180:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(181);
-
-/***/ },
-
-/***/ 181:
+/***/ 176:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(10)["default"];
+	var _classCallCheck = __webpack_require__(32)["default"];
 
-	var _createClass = __webpack_require__(11)["default"];
+	var _createClass = __webpack_require__(33)["default"];
 
-	var _interopRequire = __webpack_require__(12)["default"];
+	var _interopRequire = __webpack_require__(34)["default"];
 
 	var React = _interopRequire(__webpack_require__(2));
 
-	var TodoCount = _interopRequire(__webpack_require__(182));
-
-	var Filters = _interopRequire(__webpack_require__(183));
-
-	var Footer = (function () {
-		function Footer() {
-			_classCallCheck(this, Footer);
+	var TodoCount = (function () {
+		function TodoCount() {
+			_classCallCheck(this, TodoCount);
 		}
 
-		_createClass(Footer, {
+		_createClass(TodoCount, {
 			render: {
 				value: function render() {
 					return React.createElement(
-						"footer",
-						{ className: "footer" },
-						React.createElement(TodoCount, null),
-						React.createElement(Filters, null),
+						"span",
+						{ className: "todo-count" },
 						React.createElement(
-							"button",
-							{ className: "clear-completed" },
-							"Clear completed"
+							"strong",
+							null,
+							"2"
+						),
+						React.createElement(
+							"span",
+							null,
+							" "
+						),
+						React.createElement(
+							"span",
+							null,
+							"items"
+						),
+						React.createElement(
+							"span",
+							null,
+							" left"
 						)
 					);
 				}
 			}
 		});
 
-		return Footer;
+		return TodoCount;
 	})();
 
-	module.exports = Footer;
+	module.exports = TodoCount;
 
 /***/ },
 
-/***/ 182:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(185)
-
-/***/ },
-
-/***/ 183:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(184)
-
-/***/ },
-
-/***/ 184:
+/***/ 177:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(10)["default"];
+	var _classCallCheck = __webpack_require__(32)["default"];
 
-	var _createClass = __webpack_require__(11)["default"];
+	var _createClass = __webpack_require__(33)["default"];
 
-	var _interopRequire = __webpack_require__(12)["default"];
+	var _interopRequire = __webpack_require__(34)["default"];
 
 	var React = _interopRequire(__webpack_require__(2));
 
@@ -3874,178 +3874,56 @@ webpackJsonp([0],{
 /***/ 185:
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var _classCallCheck = __webpack_require__(10)["default"];
-
-	var _createClass = __webpack_require__(11)["default"];
-
-	var _interopRequire = __webpack_require__(12)["default"];
-
-	var React = _interopRequire(__webpack_require__(2));
-
-	var TodoCount = (function () {
-		function TodoCount() {
-			_classCallCheck(this, TodoCount);
-		}
-
-		_createClass(TodoCount, {
-			render: {
-				value: function render() {
-					return React.createElement(
-						"span",
-						{ className: "todo-count" },
-						React.createElement(
-							"strong",
-							null,
-							"2"
-						),
-						React.createElement(
-							"span",
-							null,
-							" "
-						),
-						React.createElement(
-							"span",
-							null,
-							"items"
-						),
-						React.createElement(
-							"span",
-							null,
-							" left"
-						)
-					);
-				}
-			}
-		});
-
-		return TodoCount;
-	})();
-
-	module.exports = TodoCount;
-
-/***/ },
-
-/***/ 186:
-/***/ function(module, exports, __webpack_require__) {
-
-	/*jshint node:true, esnext:true, browser:true, newcap:false, undef:true, unused:true*/
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule invariant
+	 */
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(10)["default"];
+	/**
+	 * Use invariant() to assert state which your program assumes to be true.
+	 *
+	 * Provide sprintf-style format (only %s is supported) and arguments
+	 * to provide information about what broke and what you were
+	 * expecting.
+	 *
+	 * The invariant message will be stripped in production, but the invariant
+	 * will remain to ensure logic does not differ in production.
+	 */
 
-	var _inherits = __webpack_require__(35)["default"];
-
-	var _interopRequire = __webpack_require__(12)["default"];
-
-	var PubSub = _interopRequire(__webpack_require__(4));
-
-	var Dispatcher = _interopRequire(__webpack_require__(5));
-
-	var StartAPI = _interopRequire(__webpack_require__(187));
-
-	var StartStore = _interopRequire(__webpack_require__(188));
-
-	var _store = StartStore.instance,
-	    _api = StartAPI.instance;
-
-	var StartAction = (function (_Action) {
-	  function StartAction() {
-	    _classCallCheck(this, StartAction);
-
-	    if (_Action != null) {
-	      _Action.apply(this, arguments);
+	var invariant = function (condition, format, a, b, c, d, e, f) {
+	  if (process.env.NODE_ENV !== 'production') {
+	    if (format === undefined) {
+	      throw new Error('invariant requires an error message argument');
 	    }
 	  }
 
-	  _inherits(StartAction, _Action);
-
-	  return StartAction;
-	})(Action);
-
-	module.exports = StartAction;
-
-/***/ },
-
-/***/ 187:
-/***/ function(module, exports, __webpack_require__) {
-
-	/*jshint node:true, browser:true, esnext:true, undef:true, unused:true*/
-
-	"use strict";
-
-	var _classCallCheck = __webpack_require__(10)["default"];
-
-	var _createClass = __webpack_require__(11)["default"];
-
-	var _interopRequire = __webpack_require__(12)["default"];
-
-	var PubSub = _interopRequire(__webpack_require__(4));
-
-	var Dispatcher = _interopRequire(__webpack_require__(5));
-
-	var _Todos = localStorage.getItem("todos") || [];
-
-	var StartAPI = (function () {
-	    function StartAPI() {
-	        _classCallCheck(this, StartAPI);
+	  if (!condition) {
+	    var error;
+	    if (format === undefined) {
+	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+	    } else {
+	      var args = [a, b, c, d, e, f];
+	      var argIndex = 0;
+	      error = new Error('Invariant Violation: ' + format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      }));
 	    }
 
-	    _createClass(StartAPI, {
-	        init: {
-	            value: function init() {
-	                return _Todos;
-	            }
-	        }
-	    });
+	    error.framesToPop = 1; // we don't care about invariant's own frame
+	    throw error;
+	  }
+	};
 
-	    return StartAPI;
-	})();
-
-	module.exports = StartAPI;
-
-/***/ },
-
-/***/ 188:
-/***/ function(module, exports, __webpack_require__) {
-
-	/*jshint node:true, browser:true, esnext:true, undef:true, unused:true*/
-
-	"use strict";
-
-	var _classCallCheck = __webpack_require__(10)["default"];
-
-	var _createClass = __webpack_require__(11)["default"];
-
-	var _interopRequire = __webpack_require__(12)["default"];
-
-	var PubSub = _interopRequire(__webpack_require__(4));
-
-	var Dispatcher = _interopRequire(__webpack_require__(5));
-
-	var _collection = [];
-
-	var StartStore = (function () {
-	    function StartStore() {
-	        _classCallCheck(this, StartStore);
-	    }
-
-	    _createClass(StartStore, {
-	        collection: {
-	            get: function () {
-	                return _collection;
-	            }
-	        }
-	    });
-
-	    return StartStore;
-	})();
-
-	StartStore.instance._register({});
-
-	module.exports = StartStore;
+	module.exports = invariant;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(42)))
 
 /***/ }
 
