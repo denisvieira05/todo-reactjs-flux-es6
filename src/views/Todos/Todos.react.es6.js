@@ -1,12 +1,13 @@
 import React from "react";
 
 import Todo from "./Todo";
+import Actions from "actions/StartAction";
 
 class Todos {
     render(){
         var arr = [{
             id: 1,
-            name: 'Title'
+            name: 'Title-ok'
         }];
         return (
             <section className="main" >

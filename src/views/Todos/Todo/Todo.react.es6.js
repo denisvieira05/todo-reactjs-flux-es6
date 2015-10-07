@@ -5,12 +5,11 @@ class Todo {
         super(props);
         
         this.state = {
-            name: ''
+            name: props.name
         }
     }
     
     render(){
-        console.log(this);
         
         return(
              <li>

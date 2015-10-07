@@ -8,6 +8,7 @@ import React from "react";
 
 import Header from "views/Header";
 import Todos from "views/Todos";
+import Footer from "views/Footer";
 
 class Start {
     render() {
@@ -16,6 +17,7 @@ class Start {
                 <section className="todoapp">
                     <Header />
                     <Todos />
+                    <Footer />
                 </section>
             </div>
         );

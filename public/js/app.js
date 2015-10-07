@@ -7,23 +7,25 @@ webpackJsonp([0],{
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(32)["default"];
+	var _classCallCheck = __webpack_require__(10)["default"];
 
-	var _createClass = __webpack_require__(33)["default"];
+	var _createClass = __webpack_require__(11)["default"];
 
-	var _interopRequire = __webpack_require__(34)["default"];
+	var _interopRequire = __webpack_require__(12)["default"];
 
 	var PubSub = _interopRequire(__webpack_require__(4));
 
 	var Dispatcher = _interopRequire(__webpack_require__(5));
 
-	__webpack_require__(30);
+	__webpack_require__(8);
 
 	var React = _interopRequire(__webpack_require__(2));
 
-	var Header = _interopRequire(__webpack_require__(8));
+	var Header = _interopRequire(__webpack_require__(6));
 
-	var Todos = _interopRequire(__webpack_require__(179));
+	var Todos = _interopRequire(__webpack_require__(7));
+
+	var Footer = _interopRequire(__webpack_require__(180));
 
 	var Start = (function () {
 	    function Start() {
@@ -40,7 +42,8 @@ webpackJsonp([0],{
 	                        "section",
 	                        { className: "todoapp" },
 	                        React.createElement(Header, null),
-	                        React.createElement(Todos, null)
+	                        React.createElement(Todos, null),
+	                        React.createElement(Footer, null)
 	                    )
 	                );
 	            }
@@ -61,17 +64,17 @@ webpackJsonp([0],{
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(32)["default"];
+	var _classCallCheck = __webpack_require__(10)["default"];
 
-	var _inherits = __webpack_require__(36)["default"];
+	var _inherits = __webpack_require__(35)["default"];
 
-	var _get = __webpack_require__(37)["default"];
+	var _get = __webpack_require__(36)["default"];
 
-	var _createClass = __webpack_require__(33)["default"];
+	var _createClass = __webpack_require__(11)["default"];
 
-	var _core = __webpack_require__(38)["default"];
+	var _core = __webpack_require__(37)["default"];
 
-	var EventEmitter = __webpack_require__(106).EventEmitter;
+	var EventEmitter = __webpack_require__(41).EventEmitter;
 
 	var _instance = _core.Symbol(),
 	    _enforcer = _core.Symbol();
@@ -205,28 +208,35 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 8:
+/***/ 6:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(39);
+	module.exports = __webpack_require__(38);
 
 /***/ },
 
-/***/ 30:
+/***/ 7:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(40);
+
+/***/ },
+
+/***/ 8:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(31);
+	var content = __webpack_require__(9);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(35)(content, {});
+	var update = __webpack_require__(13)(content, {});
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
-		module.hot.accept("!!/home/ubuntu/workspace/node_modules/css-loader/index.js!/home/ubuntu/workspace/node_modules/postcss-loader/index.js!/home/ubuntu/workspace/node_modules/sass-loader/index.js?includePaths[]=/home/node_modules!/home/ubuntu/workspace/src/views/Start.scss", function() {
-			var newContent = require("!!/home/ubuntu/workspace/node_modules/css-loader/index.js!/home/ubuntu/workspace/node_modules/postcss-loader/index.js!/home/ubuntu/workspace/node_modules/sass-loader/index.js?includePaths[]=/home/node_modules!/home/ubuntu/workspace/src/views/Start.scss");
+		module.hot.accept("!!/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/Projetos_em_Andamento/todo-reactjs-flux-es6/node_modules/css-loader/index.js!/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/Projetos_em_Andamento/todo-reactjs-flux-es6/node_modules/postcss-loader/index.js!/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/Projetos_em_Andamento/todo-reactjs-flux-es6/node_modules/sass-loader/index.js?includePaths[]=/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/node_modules!/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/Projetos_em_Andamento/todo-reactjs-flux-es6/src/views/Start.scss", function() {
+			var newContent = require("!!/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/Projetos_em_Andamento/todo-reactjs-flux-es6/node_modules/css-loader/index.js!/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/Projetos_em_Andamento/todo-reactjs-flux-es6/node_modules/postcss-loader/index.js!/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/Projetos_em_Andamento/todo-reactjs-flux-es6/node_modules/sass-loader/index.js?includePaths[]=/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/node_modules!/media/denisvieira/3C5C5AE65C5A9B0A/MegaSync/Projetos/Projetos_em_Andamento/todo-reactjs-flux-es6/src/views/Start.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -236,15 +246,15 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 31:
+/***/ 9:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(108)();
+	exports = module.exports = __webpack_require__(106)();
 	exports.push([module.id, ".FinanceiroApp {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-flow: column;\n      -ms-flex-flow: column;\n          flex-flow: column;\n  padding: 1rem 0 0;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0; }\n\n.FinanceiroApp__Empty {\n  color: #777;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-flow: column;\n      -ms-flex-flow: column;\n          flex-flow: column;\n  font-size: 1.6rem;\n  line-height: 1.3;\n  margin: auto;\n  text-align: center;\n  width: 25rem; }\n  .FinanceiroApp__Empty i {\n    color: #ccc;\n    font-size: 7rem;\n    margin-bottom: 1rem;\n    text-shadow: #999 1px 1px 0; }\n", ""]);
 
 /***/ },
 
-/***/ 32:
+/***/ 10:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -259,7 +269,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 33:
+/***/ 11:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -286,7 +296,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 34:
+/***/ 12:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -299,7 +309,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 35:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -496,7 +506,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 36:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -521,12 +531,12 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 37:
+/***/ 36:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _core = __webpack_require__(38)["default"];
+	var _core = __webpack_require__(37)["default"];
 
 	exports["default"] = function get(_x, _x2, _x3) {
 	  var _again = true;
@@ -570,7 +580,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 38:
+/***/ 37:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -2917,16 +2927,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 39:
+/***/ 38:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(32)["default"];
+	var _classCallCheck = __webpack_require__(10)["default"];
 
-	var _createClass = __webpack_require__(33)["default"];
+	var _createClass = __webpack_require__(11)["default"];
 
-	var _interopRequire = __webpack_require__(34)["default"];
+	var _interopRequire = __webpack_require__(12)["default"];
 
 	var React = _interopRequire(__webpack_require__(2));
 
@@ -2959,7 +2969,64 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 106:
+/***/ 40:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _classCallCheck = __webpack_require__(10)["default"];
+
+	var _createClass = __webpack_require__(11)["default"];
+
+	var _interopRequire = __webpack_require__(12)["default"];
+
+	var React = _interopRequire(__webpack_require__(2));
+
+	var Todo = _interopRequire(__webpack_require__(151));
+
+	var Actions = _interopRequire(__webpack_require__(186));
+
+	var Todos = (function () {
+	    function Todos() {
+	        _classCallCheck(this, Todos);
+	    }
+
+	    _createClass(Todos, {
+	        render: {
+	            value: function render() {
+	                var arr = [{
+	                    id: 1,
+	                    name: "Title-ok"
+	                }];
+	                return React.createElement(
+	                    "section",
+	                    { className: "main" },
+	                    React.createElement("input", { className: "toggle-all", type: "checkbox" }),
+	                    React.createElement(
+	                        "ul",
+	                        { className: "todo-list" },
+	                        arr.map(function (item) {
+	                            return React.createElement(Todo, {
+	                                id: item.id,
+	                                name: item.name
+	                            });
+	                        })
+	                    )
+	                );
+	            }
+	        }
+	    });
+
+	    return Todos;
+	})();
+
+	;
+
+	module.exports = Todos;
+
+/***/ },
+
+/***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -3264,24 +3331,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 107:
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 */
-
-	module.exports.Dispatcher = __webpack_require__(152);
-
-
-/***/ },
-
-/***/ 108:
+/***/ 106:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function() {
@@ -3300,6 +3350,30 @@ webpackJsonp([0],{
 		};
 		return list;
 	}
+
+/***/ },
+
+/***/ 107:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	module.exports.Dispatcher = __webpack_require__(152);
+
+
+/***/ },
+
+/***/ 151:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(170);
 
 /***/ },
 
@@ -3325,7 +3399,7 @@ webpackJsonp([0],{
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	var invariant = __webpack_require__(176);
+	var invariant = __webpack_require__(178);
 
 	var _prefix = 'ID_';
 
@@ -3537,11 +3611,70 @@ webpackJsonp([0],{
 	})();
 
 	module.exports = Dispatcher;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)))
 
 /***/ },
 
-/***/ 176:
+/***/ 170:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _classCallCheck = __webpack_require__(10)["default"];
+
+	var _get = __webpack_require__(36)["default"];
+
+	var _createClass = __webpack_require__(11)["default"];
+
+	var _core = __webpack_require__(37)["default"];
+
+	var _interopRequire = __webpack_require__(12)["default"];
+
+	var React = _interopRequire(__webpack_require__(2));
+
+	var Todo = (function () {
+	    function Todo(props) {
+	        _classCallCheck(this, Todo);
+
+	        _get(_core.Object.getPrototypeOf(Todo.prototype), "constructor", this).call(this, props);
+
+	        this.state = {
+	            name: props.name
+	        };
+	    }
+
+	    _createClass(Todo, {
+	        render: {
+	            value: function render() {
+
+	                return React.createElement(
+	                    "li",
+	                    null,
+	                    React.createElement(
+	                        "div",
+	                        { className: "view" },
+	                        React.createElement("input", { id: this.props.id, className: "toggle", type: "checkbox" }),
+	                        React.createElement(
+	                            "label",
+	                            null,
+	                            this.state.name
+	                        ),
+	                        React.createElement("button", { className: "destroy" })
+	                    ),
+	                    React.createElement("input", { className: "edit" })
+	                );
+	            }
+	        }
+	    });
+
+	    return Todo;
+	})();
+
+	module.exports = Todo;
+
+/***/ },
+
+/***/ 178:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3593,129 +3726,326 @@ webpackJsonp([0],{
 	};
 
 	module.exports = invariant;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
-
-/***/ },
-
-/***/ 179:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(180);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)))
 
 /***/ },
 
 /***/ 180:
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(181);
+
+/***/ },
+
+/***/ 181:
+/***/ function(module, exports, __webpack_require__) {
+
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(32)["default"];
+	var _classCallCheck = __webpack_require__(10)["default"];
 
-	var _createClass = __webpack_require__(33)["default"];
+	var _createClass = __webpack_require__(11)["default"];
 
-	var _interopRequire = __webpack_require__(34)["default"];
+	var _interopRequire = __webpack_require__(12)["default"];
 
 	var React = _interopRequire(__webpack_require__(2));
 
-	var Todo = _interopRequire(__webpack_require__(182));
+	var TodoCount = _interopRequire(__webpack_require__(182));
 
-	var Todos = (function () {
-	    function Todos() {
-	        _classCallCheck(this, Todos);
-	    }
+	var Filters = _interopRequire(__webpack_require__(183));
 
-	    _createClass(Todos, {
-	        render: {
-	            value: function render() {
-	                var arr = [{
-	                    id: 1,
-	                    name: "Title"
-	                }];
-	                return React.createElement(
-	                    "section",
-	                    { className: "main" },
-	                    React.createElement("input", { className: "toggle-all", type: "checkbox" }),
-	                    React.createElement(
-	                        "ul",
-	                        { className: "todo-list" },
-	                        arr.map(function (item) {
-	                            return React.createElement(Todo, {
-	                                id: item.id,
-	                                name: item.name
-	                            });
-	                        })
-	                    )
-	                );
-	            }
-	        }
-	    });
+	var Footer = (function () {
+		function Footer() {
+			_classCallCheck(this, Footer);
+		}
 
-	    return Todos;
+		_createClass(Footer, {
+			render: {
+				value: function render() {
+					return React.createElement(
+						"footer",
+						{ className: "footer" },
+						React.createElement(TodoCount, null),
+						React.createElement(Filters, null),
+						React.createElement(
+							"button",
+							{ className: "clear-completed" },
+							"Clear completed"
+						)
+					);
+				}
+			}
+		});
+
+		return Footer;
 	})();
 
-	;
-
-	module.exports = Todos;
+	module.exports = Footer;
 
 /***/ },
 
 /***/ 182:
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(185)
+
+/***/ },
+
+/***/ 183:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(184)
+
+/***/ },
+
+/***/ 184:
+/***/ function(module, exports, __webpack_require__) {
+
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(32)["default"];
+	var _classCallCheck = __webpack_require__(10)["default"];
 
-	var _get = __webpack_require__(37)["default"];
+	var _createClass = __webpack_require__(11)["default"];
 
-	var _createClass = __webpack_require__(33)["default"];
-
-	var _core = __webpack_require__(38)["default"];
-
-	var _interopRequire = __webpack_require__(34)["default"];
+	var _interopRequire = __webpack_require__(12)["default"];
 
 	var React = _interopRequire(__webpack_require__(2));
 
-	var Todo = (function () {
-	    function Todo(props) {
-	        _classCallCheck(this, Todo);
+	var Filters = (function () {
+		function Filters() {
+			_classCallCheck(this, Filters);
+		}
 
-	        _get(_core.Object.getPrototypeOf(Todo.prototype), "constructor", this).call(this, props);
+		_createClass(Filters, {
+			render: {
+				value: function render() {
+					return React.createElement(
+						"ul",
+						{ className: "filters" },
+						React.createElement(
+							"li",
+							null,
+							React.createElement(
+								"a",
+								{ href: "#/", className: "selected" },
+								"All"
+							)
+						),
+						React.createElement(
+							"span",
+							null,
+							" "
+						),
+						React.createElement(
+							"li",
+							null,
+							React.createElement(
+								"a",
+								{ href: "#/active", className: "" },
+								"Active"
+							)
+						),
+						React.createElement(
+							"span",
+							null,
+							" "
+						),
+						React.createElement(
+							"li",
+							null,
+							React.createElement(
+								"a",
+								{ href: "#/completed", className: "" },
+								"Completed"
+							)
+						)
+					);
+				}
+			}
+		});
 
-	        this.state = {
-	            name: ""
-	        };
+		return Filters;
+	})();
+
+	module.exports = Filters;
+
+/***/ },
+
+/***/ 185:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _classCallCheck = __webpack_require__(10)["default"];
+
+	var _createClass = __webpack_require__(11)["default"];
+
+	var _interopRequire = __webpack_require__(12)["default"];
+
+	var React = _interopRequire(__webpack_require__(2));
+
+	var TodoCount = (function () {
+		function TodoCount() {
+			_classCallCheck(this, TodoCount);
+		}
+
+		_createClass(TodoCount, {
+			render: {
+				value: function render() {
+					return React.createElement(
+						"span",
+						{ className: "todo-count" },
+						React.createElement(
+							"strong",
+							null,
+							"2"
+						),
+						React.createElement(
+							"span",
+							null,
+							" "
+						),
+						React.createElement(
+							"span",
+							null,
+							"items"
+						),
+						React.createElement(
+							"span",
+							null,
+							" left"
+						)
+					);
+				}
+			}
+		});
+
+		return TodoCount;
+	})();
+
+	module.exports = TodoCount;
+
+/***/ },
+
+/***/ 186:
+/***/ function(module, exports, __webpack_require__) {
+
+	/*jshint node:true, esnext:true, browser:true, newcap:false, undef:true, unused:true*/
+
+	"use strict";
+
+	var _classCallCheck = __webpack_require__(10)["default"];
+
+	var _inherits = __webpack_require__(35)["default"];
+
+	var _interopRequire = __webpack_require__(12)["default"];
+
+	var PubSub = _interopRequire(__webpack_require__(4));
+
+	var Dispatcher = _interopRequire(__webpack_require__(5));
+
+	var StartAPI = _interopRequire(__webpack_require__(187));
+
+	var StartStore = _interopRequire(__webpack_require__(188));
+
+	var _store = StartStore.instance,
+	    _api = StartAPI.instance;
+
+	var StartAction = (function (_Action) {
+	  function StartAction() {
+	    _classCallCheck(this, StartAction);
+
+	    if (_Action != null) {
+	      _Action.apply(this, arguments);
+	    }
+	  }
+
+	  _inherits(StartAction, _Action);
+
+	  return StartAction;
+	})(Action);
+
+	module.exports = StartAction;
+
+/***/ },
+
+/***/ 187:
+/***/ function(module, exports, __webpack_require__) {
+
+	/*jshint node:true, browser:true, esnext:true, undef:true, unused:true*/
+
+	"use strict";
+
+	var _classCallCheck = __webpack_require__(10)["default"];
+
+	var _createClass = __webpack_require__(11)["default"];
+
+	var _interopRequire = __webpack_require__(12)["default"];
+
+	var PubSub = _interopRequire(__webpack_require__(4));
+
+	var Dispatcher = _interopRequire(__webpack_require__(5));
+
+	var _Todos = localStorage.getItem("todos") || [];
+
+	var StartAPI = (function () {
+	    function StartAPI() {
+	        _classCallCheck(this, StartAPI);
 	    }
 
-	    _createClass(Todo, {
-	        render: {
-	            value: function render() {
-	                console.log(this);
-
-	                return React.createElement(
-	                    "li",
-	                    null,
-	                    React.createElement(
-	                        "div",
-	                        { className: "view" },
-	                        React.createElement("input", { id: this.props.id, className: "toggle", type: "checkbox" }),
-	                        React.createElement(
-	                            "label",
-	                            null,
-	                            this.state.name
-	                        ),
-	                        React.createElement("button", { className: "destroy" })
-	                    ),
-	                    React.createElement("input", { className: "edit" })
-	                );
+	    _createClass(StartAPI, {
+	        init: {
+	            value: function init() {
+	                return _Todos;
 	            }
 	        }
 	    });
 
-	    return Todo;
+	    return StartAPI;
 	})();
 
-	module.exports = Todo;
+	module.exports = StartAPI;
+
+/***/ },
+
+/***/ 188:
+/***/ function(module, exports, __webpack_require__) {
+
+	/*jshint node:true, browser:true, esnext:true, undef:true, unused:true*/
+
+	"use strict";
+
+	var _classCallCheck = __webpack_require__(10)["default"];
+
+	var _createClass = __webpack_require__(11)["default"];
+
+	var _interopRequire = __webpack_require__(12)["default"];
+
+	var PubSub = _interopRequire(__webpack_require__(4));
+
+	var Dispatcher = _interopRequire(__webpack_require__(5));
+
+	var _collection = [];
+
+	var StartStore = (function () {
+	    function StartStore() {
+	        _classCallCheck(this, StartStore);
+	    }
+
+	    _createClass(StartStore, {
+	        collection: {
+	            get: function () {
+	                return _collection;
+	            }
+	        }
+	    });
+
+	    return StartStore;
+	})();
+
+	StartStore.instance._register({});
+
+	module.exports = StartStore;
 
 /***/ }
 
