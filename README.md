@@ -1,1 +1,3 @@
-# todo-reactjs-flux-es6
+## todo-reactjs-flux-es6
+
+LEARNING LIBRARY JAVASCRIPT REACT JS AND ARCHITECTURE FLUX .
