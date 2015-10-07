@@ -1,0 +1,28 @@
+.FinanceiroApp {
+    display:flex;
+    flex-flow: column;
+    padding: 1rem 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.FinanceiroApp__Empty {
+    color: #777;
+    display: flex;
+    flex-flow: column;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin: auto;
+    text-align: center;
+    width: 25rem;
+
+    i {
+        color: #ccc;
+        font-size: 7rem;
+        margin-bottom: 1rem;
+        text-shadow: #999 1px 1px 0;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "todo-es6",
+  "description": "",
+  "author": "denisvieira <denisvieira05@gmail.com>",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/views/Start.react.es6.js",
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "flux": "^2.1.1",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.8",
+    "babel-core": "^4.5.5",
+    "babel-loader": "^4.0.0",
+    "csswring": "^3.0.3",
+    "babel-runtime": "^4.5.5",
+    "css-loader": "^0.9.1",
+    "postcss-loader": "^0.3.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^0.4.2",
+    "style-loader": "^0.8.3",
+    "url-loader": "^0.5.5",
+    "webpack": "~1.4.13"
+  }
+}
